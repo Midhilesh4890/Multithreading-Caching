@@ -65,3 +65,5 @@ if __name__ == '__main__':
     # Calculate and log the execution time
     execution_time = end_time - start_time
     logger.info(f"Execution time: {execution_time} seconds")
+    pool.close()
+    pool.join()
